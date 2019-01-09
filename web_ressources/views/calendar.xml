@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="calendar_ressources_view" model="ir.ui.view">
+        <field name="name">calendar.event.ressources</field>
+        <field name="model">calendar.event</field>
+        <field name="type">ressources</field>
+        <field name="arch" type="xml">
+            <ressources>
+            </ressources>
+        </field>
+    </record>
+
+   <record id="calendar.action_calendar_event" model="ir.actions.act_window">
+        <field name="name">Meetings</field>
+        <field name="res_model">calendar.event</field>
+        <field name="view_mode">calendar,ressources,tree,form</field>
+        <field name="view_id" ref="calendar.view_calendar_event_calendar"/>
+        <field name="search_view_id" ref="calendar.view_calendar_event_search"/>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Schedule a new meeting
+          </p><p>
+            The calendar is shared between employees and fully integrated with
+            other applications such as the employee leaves or the business
+            opportunities.
+          </p>
+        </field>
+</record>
+
+</odoo>
