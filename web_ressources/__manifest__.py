@@ -4,7 +4,7 @@
     'name': "Web Ressources",
     'summary': "Interactive visualization Ressources in time",
     "version": "11.0.1.4.1",
-    'author': 'Nubeo, '
+    'author': 'Nubeo', 
     "category": "web",
     "license": "AGPL-3",
     "application": False,
